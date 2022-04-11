@@ -1,0 +1,76 @@
+.degreeAndCerts {
+  animation-name: tab-cycling;
+  animation-duration: 30s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+.contact-header {
+  color: #4e4459;
+  font-family: "EB Garamond";
+  font-size: 8vw;
+  text-align: right;
+  margin-right: 4vw;
+}
+
+.contact-tabs {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+.contact-list {
+  display: inline-block;
+  font-size: 18px;
+  color: #4e4459;
+  text-decoration: none;
+  -webkit-animation-fill-mode: forwards;
+}
+.contact-list-1 {
+  animation-delay: 0s;
+}
+.contact-list-2 {
+  animation-delay: 12s;
+}
+.contact-list-3 {
+  animation-delay: 24s;
+}
+.contact-list:hover {
+  color: #3a96cf;
+}
+
+.bio-tab {
+  display: none;
+  margin: 3vw;
+}
+.degree-tab {
+  margin: 3vw;
+  display: none;
+}
+.degree-desc {
+  opacity: 50%;
+}
+.personal-tab {
+  display: none;
+  margin: 3vw;
+}
+
+.degree-rotator {
+  display: flex;
+}
+.basicsCert {
+  width: 50%;
+  display: inline-block;
+}
+.plusCert {
+  width: 50%;
+  display: inline-block;
+}
+
+.bio-sec {
+  font-size: 21px;
+}
+
+@media screen and (max-width: 413px) {
+  .contact-header {
+    font-size: 12vw;
+  }
+}

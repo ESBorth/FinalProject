@@ -1,0 +1,95 @@
+.dev-header {
+  color: #4e4459;
+  font-family: "EB Garamond";
+  font-size: 8vw;
+  text-align: right;
+  margin-right: 4vw;
+}
+.dev-prj-con {
+  display: grid;
+  width: 45%;
+  margin: 2.5%;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.dev-prj-con:hover {
+  border: 2px solid #4e4459;
+}
+.dev-icon {
+  width: 100%;
+  border-radius: 30px;
+}
+.projects {
+  display: flex;
+}
+.prj-header {
+  font-size: 3vw;
+  text-align: center;
+}
+.dev-page-sec {
+  margin-left: 2vw;
+  display: inline-block;
+  color: #4e4459;
+}
+.dev-page-sec:hover {
+  color: #3a96cf;
+}
+.dev-button {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+  padding: 1vw;
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #dbe6d8;
+  color: #4e4459;
+}
+.dev-button:hover {
+  background-color: #4e4459;
+  color: white;
+}
+.prj-desc {
+  margin: 2vw;
+  opacity: 75%;
+}
+.knowledge {
+  display: none;
+}
+.knowledge-list {
+  text-decoration: none;
+  padding-top: 15px;
+  margin-left: 10vw;
+}
+li {
+  padding: 5px;
+  font-size: 21px;
+}
+
+@media screen and (max-width: 413px) {
+  .projects {
+    display: block;
+    margin-top: 10px;
+  }
+  .dev-prj-con {
+    width: 95%;
+  }
+  .dev-button {
+    margin: 5vw;
+    padding: 10px;
+  }
+  .dev-prj-con:hover {
+    border: none;
+  }
+  .prj-desc {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .prj-header {
+    font-size: 21px;
+  }
+  .dev-header {
+    font-size: 32px;
+  }
+}

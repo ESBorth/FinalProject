@@ -1,0 +1,273 @@
+body {
+  margin-top: 100px;
+}
+h1 {
+  font-size: 12vw;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+}
+
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+.about-paragraphs {
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.page-header {
+  visibility: hidden;
+  opacity: 0%;
+  margin-top: 53vh;
+  text-align: center;
+  z-index: 1;
+  animation-name: appear, slideUp, disappear;
+  animation-delay: 2s, 10s, 12s;
+  animation-duration: 5s, 1s, 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes appear {
+  0% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 100%;
+    visibility: visible;
+  }
+}
+@keyframes slideUp {
+  0% {
+    margin-top: 53vh;
+  }
+  100% {
+    margin-top: 13vh;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 100%;
+    visibility: visible;
+  }
+  99% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+  100% {
+    font-size: 0px;
+    height: 0px;
+    display: none;
+  }
+}
+
+.color {
+  background-color: #dbe6d8;
+}
+
+.landing-page {
+  color: #4e4459;
+  opacity: 90%;
+  font-family: "EB Garamond", serif;
+}
+.landing-page-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.capability {
+  text-align: center;
+  opacity: 50%;
+  margin: 10px;
+  transition: 200ms ease-in-out;
+}
+.c1,
+.c2,
+.c3 {
+  animation-name: bold-cycle;
+  animation-duration: 1.5s;
+}
+.c1 {
+  animation-delay: 4s;
+}
+.c2 {
+  animation-delay: 6s;
+}
+.c3 {
+  animation-delay: 8s;
+}
+@keyframes bold-cycle {
+  0% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 50%;
+  }
+}
+
+.animated-div {
+  margin: 0;
+  background-color: #dbe6d8;
+  text-align: center;
+  animation-name: starter, openingBit, navCreation;
+  height: 100vh;
+  animation-duration: 1s, 4s, 1s;
+  animation-delay: 0s, 2s, 10s;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes starter {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes openingBit {
+  0% {
+    height: 100vh;
+  }
+  50% {
+    height: 50vh;
+  }
+  100% {
+    height: 50vh;
+  }
+}
+@keyframes navCreation {
+  0% {
+    height: 50vh;
+  }
+  100% {
+    height: 8vh;
+  }
+}
+.animated-div-secondary {
+  margin: 0;
+  background-color: #dbe6d8;
+  text-align: center;
+  height: 8vh;
+}
+
+.animated-hello {
+  color: white;
+  opacity: 0%;
+  font-family: "Jost", sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 32%;
+  font-size: clamp(5rem, 18vw, 80vh);
+  animation-name: hello-appear, hello-disappear;
+  animation-duration: 1s, 1s;
+  animation-delay: 1s, 8s;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes hello-appear {
+  0% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 100%;
+    visibility: visible;
+  }
+}
+@keyframes hello-disappear {
+  0% {
+    opacity: 100%;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+
+.animated-intro {
+  text-align: center;
+}
+
+.nav-animation {
+  opacity: 0;
+  position: sticky;
+  bottom: 0;
+  visibility: hidden;
+  z-index: 3;
+  animation-name: nav-appear;
+  animation-duration: 1s;
+  animation-delay: 13s;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes nav-appear {
+  0% {
+    visibility: hidden;
+    opacity: 0%;
+  }
+  100% {
+    visibility: visible;
+    opacity: 100%;
+  }
+}
+
+.cornerName {
+  display: flex;
+  text-align: left;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.navigation-item {
+  list-style: none;
+  display: flex;
+  padding-left: 30px;
+}
+
+.disabled {
+  display: none;
+}
+
+@media screen and (max-width: 413px) {
+  .landing-page-list {
+    display: block;
+    font-size: 5vw;
+  }
+  .capability {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
